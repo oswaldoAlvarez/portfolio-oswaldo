@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  z-index: 1;
+  .tw-svg {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #3db0ff;
+    margin-left: 25px;
+  }
+  h1 {
+    font-size: 12px;
+    color: black;
+  }
+}

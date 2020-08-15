@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(125deg, #15202b 20%, white);
+  font-family: sans-serif;
+  min-height: 100vh;
+  &::-webkit-scrollbar {
+    background-color: white;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #15202b;
+    border-radius: 6px;
+  }
+}

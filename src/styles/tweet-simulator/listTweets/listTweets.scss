@@ -1,0 +1,15 @@
+.list-tweets-empty {
+  padding-top: 150px;
+  text-align: center;
+  color: #fff;
+}
+
+.list-tweets {
+  padding-top: 150px !important;
+}
+
+@media (max-width: 500px) {
+  .list-tweets {
+    padding-top: 50px !important;
+  }
+}
