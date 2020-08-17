@@ -7,15 +7,15 @@
     color: white;
     z-index: 1;
   }
+  .MuiButtonBase-root {
+  }
 }
 
 @media (max-width: 500px) {
-  .list-tweets {
-    flex-direction: column;
-    .MuiGrid-item {
-      .MuiCard-root {
-        width: 280px;
-      }
+  .send-tweet {
+    .MuiButtonBase-root {
+      bottom: 10% !important;
+      right: 5% !important;
     }
   }
 }

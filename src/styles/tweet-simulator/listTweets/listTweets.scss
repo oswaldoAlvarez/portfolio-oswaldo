@@ -1,15 +1,29 @@
 .list-tweets-empty {
   padding-top: 150px;
   text-align: center;
-  color: #fff;
+  &__title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 26px;
+  }
 }
 
 .list-tweets {
   padding-top: 150px !important;
+  margin: 0 !important;
+  width: inherit !important;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 500px) {
   .list-tweets {
     padding-top: 50px !important;
+    width: inherit;
+    flex-direction: column;
+    .MuiGrid-item {
+      .MuiCard-root {
+        width: 280px;
+      }
+    }
   }
 }

@@ -10,10 +10,10 @@ function Tweet({ tweet, index, deleteTweet }) {
     <Card className="tweet">
       <CardContent>
         <div className="tweet__header">
-          <h5>{tweet.name}</h5>
+          <h5 className="tweet__name">{tweet.name.toUpperCase()}</h5>
           <DeleteTwoToneIcon onClick={() => deleteTweet(index)} />
         </div>
-        <p>{tweet.tweet}</p>
+        <p className="tweet__content">{tweet.tweet}</p>
         <div className="tweet__date-add-tweet">
           {moment(tweet.time).format("DD/MM/YYYY HH:mm")}
         </div>

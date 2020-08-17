@@ -9,6 +9,11 @@
   &__form {
     .MuiFormControl-root {
       width: 100%;
+      .MuiInputBase-root {
+        .MuiInputBase-input {
+          height: 28px;
+        }
+      }
     }
     &-name {
       width: 50% !important;
@@ -21,7 +26,7 @@
 
 @media (max-width: 500px) {
   .form-send-tweet {
-    width: 85%;
+    width: 100%;
     .form-send-tweet__form {
       .MuiFormControl-root {
         .MuiFormGroup-root {

@@ -1,6 +1,11 @@
 .tweet {
   position: relative;
-
+  &__name {
+    font-weight: bold;
+  }
+  &__content {
+    word-break: break-word;
+  }
   &__header {
     display: flex;
     align-items: center;

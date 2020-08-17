@@ -8,7 +8,7 @@ function ListTweets({ allTweets, deleteTweet }) {
   if (!allTweets || allTweets.length === 0) {
     return (
       <div className="list-tweets-empty">
-        <h2>No hay Tweets...</h2>
+        <h2 className="list-tweets-empty__title">No hay Tweets . . .</h2>
       </div>
     );
   }
