@@ -84,10 +84,7 @@
 @media (max-width: 600px) {
   .content-movie {
     .movie {
-      background-image: none !important;
-      width: 400px !important;
       &__dark {
-        width: inherit;
       }
     }
   }
