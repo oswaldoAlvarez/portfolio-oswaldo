@@ -1,0 +1,48 @@
+.movie-list {
+  width: 80%;
+  margin: 0 auto !important;
+  margin-top: 50px !important;
+  margin-bottom: 60px !important;
+  border-color: #001529 !important;
+  .ant-list-header {
+    background-color: #001529;
+    h2 {
+      text-align: center;
+      margin: 0;
+      color: #fff;
+    }
+  }
+  .ant-list-items {
+    height: 500px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      background-color: white;
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #001529;
+      border-radius: 6px;
+    }
+  }
+  &__movie {
+    .ant-list-item-meta {
+      align-items: center;
+    }
+    .ant-list-item-meta-title {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .movies-row {
+    width: 500px;
+    flex-direction: column !important;
+    .movies-col {
+      width: inherit;
+      .movie-list {
+        width: inherit;
+      }
+    }
+  }
+}

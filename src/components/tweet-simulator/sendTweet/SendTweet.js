@@ -4,7 +4,7 @@ import AddIcon from "@material-ui/icons/Add";
 import moment from "moment";
 import ModalContainer from "../modalContainer/ModalContainer";
 import FormSendTweet from "../formSendTweet/FormSendTweet";
-import { TWEETS_STORAGE } from "../../../utils/constants";
+import { TWEETS_STORAGE } from "../../../utils/tweet-simulator/constanst";
 
 import "../../../styles/tweet-simulator/sendTweet/sendTweet.scss";
 

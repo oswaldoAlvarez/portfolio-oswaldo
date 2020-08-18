@@ -3,7 +3,7 @@ import { Container, Snackbar, IconButton, Button } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import Header from "./header/Header";
 import SendTweet from "./sendTweet/SendTweet";
-import { TWEETS_STORAGE } from "../../utils/constants";
+import { TWEETS_STORAGE } from "../../utils/tweet-simulator/constanst";
 import ListTweets from "./listTweets/ListTweets";
 import FooterProjects from "../FooterProjects";
 

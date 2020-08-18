@@ -1,0 +1,12 @@
+.loading {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__title {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}

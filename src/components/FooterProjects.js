@@ -7,16 +7,12 @@ function FooterProjects() {
   return (
     <div className="footer-projects">
       <div className="footer-projects__content">
-        <div className="footer-projects__proyectos">
-          <Link className="fp__hipervinculo" to="/">
-            Twitter
-          </Link>
-        </div>
-        <div className="footer-projects__proyectos">
-          <Link className="fp__hipervinculo" to="/cine-simulator">
-            Cine
-          </Link>
-        </div>
+        <Link className="footer-projects__proyectos" to="/">
+          Twitter
+        </Link>
+        <Link className="footer-projects__proyectos" to="/cine-simulator/home">
+          Cine
+        </Link>
       </div>
     </div>
   );

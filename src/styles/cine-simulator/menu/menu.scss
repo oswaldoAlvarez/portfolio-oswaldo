@@ -1,0 +1,13 @@
+.menu-top {
+  display: flex;
+  height: 100%;
+  &__logo {
+    display: inherit;
+    align-items: center;
+    svg {
+      color: #fff;
+      font-size: 50px;
+      margin-right: 20px;
+    }
+  }
+}
