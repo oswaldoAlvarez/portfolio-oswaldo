@@ -10,11 +10,12 @@ export default function ModalVideo(props) {
 
   useEffect(() => {
     switch (videoPlatform) {
-      case "Youtube":
+      case "YouTube":
         setUrlVideo(`https://youtu.be/${videoKey}`);
         break;
       case "Vimeo":
         setUrlVideo(`https://vimeo.com/${videoKey}`);
+        break;
       default:
         break;
     }
@@ -28,7 +29,7 @@ export default function ModalVideo(props) {
       onCancel={close}
       footer={false}
     >
-      <ReactPlayer url={urlVideo} />
+      <ReactPlayer url={urlVideo} controls />
     </Modal>
   );
 }

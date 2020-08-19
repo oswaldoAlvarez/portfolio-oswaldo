@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FooterProjects from "../../FooterProjects";
 import { Layout, Row, Col, Button } from "antd";
 import MenuTop from "../menuTop/MenuTop";
@@ -8,6 +8,7 @@ import useFetch from "../../../hooks/useFetch";
 import { URL_API, API } from "../../../utils/cine-simulator/constants";
 import Loading from "../loading/Loading";
 import ModalVideo from "../modalVideo/ModalVideo";
+import { PlayCircleOutlined } from "@ant-design/icons";
 
 import "../../../styles/cine-simulator/movieHome/movie.scss";
 
@@ -64,8 +65,36 @@ function PosterMovie(props) {
 
 function MovieInfo(props) {
   const {
-    movieInfo: { title, id, release_date, overview, genres },
+    movieInfo: { id, title, release_date, overview, genres },
   } = props;
+  const [isVisibleModal, setIsVisibleModal] = useState(false);
+  const videoMovie = useFetch(
+    `${URL_API}/movie/${id}/videos?api_key=${API}&language=es-ES`
+  );
+
+  const openModal = () => setIsVisibleModal(true);
+  const closeModal = () => setIsVisibleModal(false);
+
+  const renderVideo = () => {
+    if (videoMovie.result) {
+      if (videoMovie.result.results.length > 0) {
+        return (
+          <>
+            <Button onClick={openModal}>
+              <PlayCircleOutlined />
+              Ver trailer
+            </Button>
+            <ModalVideo
+              videoKey={videoMovie.result.results[0].key}
+              videoPlatform={videoMovie.result.results[0].site}
+              isOpen={isVisibleModal}
+              close={closeModal}
+            />
+          </>
+        );
+      }
+    }
+  };
 
   return (
     <>
@@ -74,7 +103,7 @@ function MovieInfo(props) {
           {title}
           <span>{moment(release_date, "YYYY-MM-DD").format("YYYY")}</span>
         </h1>
-        <button>Ver trailer</button>
+        {renderVideo()}
       </div>
       <div className="movie__info-content">
         <h3>General</h3>
