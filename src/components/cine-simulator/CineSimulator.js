@@ -24,19 +24,19 @@ function CineSimulator() {
     <Layout>
       <Header>
         <MenuTop />
-        <SliderMovies movies={newMovies} />
-        <Row className="movies-row">
-          <Col className="movies-col" span={12}>
-            <MovieList title="Peliculas Populares" movies={popularMovies} />
-          </Col>
-          <Col className="movies-col" span={12}>
-            <MovieList
-              title="Peliculas Mejor Puntuadas"
-              movies={topRatedMovies}
-            />
-          </Col>
-        </Row>
       </Header>
+      <SliderMovies movies={newMovies} />
+      <Row className="movies-row">
+        <Col className="movies-col" span={12}>
+          <MovieList title="Peliculas Populares" movies={popularMovies} />
+        </Col>
+        <Col className="movies-col" span={12}>
+          <MovieList
+            title="Peliculas Mejor Puntuadas"
+            movies={topRatedMovies}
+          />
+        </Col>
+      </Row>
       <FooterProjects />
     </Layout>
   );
