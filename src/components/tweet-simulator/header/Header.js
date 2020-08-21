@@ -6,7 +6,7 @@ import "../../../styles/tweet-simulator/header/header.scss";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header-TS">
       <FontAwesomeIcon icon={faTwitter} className="tw-svg" />
       <h1>Tweets Simulator</h1>
     </div>

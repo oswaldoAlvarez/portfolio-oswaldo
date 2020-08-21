@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import FooterProjects from "../../FooterProjects";
-import { Layout, Row, Col, Button } from "antd";
-import MenuTop from "../menuTop/MenuTop";
+import Header from "../headerCine/HeaderCine";
+import { Row, Col, Button } from "antd";
 import { useParams } from "react-router-dom";
 import moment from "moment";
 import useFetch from "../../../hooks/useFetch";
@@ -13,7 +12,6 @@ import { PlayCircleOutlined } from "@ant-design/icons";
 import "../../../styles/cine-simulator/movieHome/movie.scss";
 
 export default function Movie() {
-  const { Header } = Layout;
   const { id } = useParams();
   const movieInfo = useFetch(
     `${URL_API}/movie/${id}?api_key=${API}&language=es-ES`
@@ -24,9 +22,7 @@ export default function Movie() {
   }
   return (
     <>
-      <Header className="content-movie__header">
-        <MenuTop />
-      </Header>
+      <Header />
       <div className="content-movie">
         <RenderMovie movieInfo={movieInfo.result} />
       </div>

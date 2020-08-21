@@ -1,19 +1,23 @@
 import React from "react";
-import FooterProjects from "../../FooterProjects";
+import Header from "../headerCine/HeaderCine";
 import { Layout } from "antd";
 import MenuTop from "../menuTop/MenuTop";
+import { Link } from "react-router-dom";
 
-function Error404() {
-  const { Header, Content } = Layout;
+import "../../../styles/cine-simulator/error404/error404.scss";
+import "../../../styles/cine-simulator/headerCine/headerCine.scss";
+
+export default function Error404() {
   return (
     <Layout>
-      <Header>
-        <MenuTop />
-      </Header>
-      <div>error404</div>
-      <FooterProjects />
+      <Header />
+      <div className="error404">
+        <h1>error404</h1>
+        <h2>Página no encontrada</h2>
+        <Link to="/cine-simulator/home">
+          <h3>Volver al inicio.</h3>
+        </Link>
+      </div>
     </Layout>
   );
 }
-
-export default Error404;

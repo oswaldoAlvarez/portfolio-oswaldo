@@ -1,0 +1,29 @@
+.header-cine {
+  background-color: #001529;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+  position: relative;
+  height: 64px;
+  width: 100%;
+  &__logo-responsive {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-cine {
+    padding-left: 25px;
+    &__logo-responsive {
+      // width: 40px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      display: none;
+      svg {
+        color: white;
+        font-size: 50px;
+      }
+    }
+  }
+}

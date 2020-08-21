@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import store from "./store/configStore";
 import Routes from "./Routes";
+import "rc-pagination/assets/index.css";
 
 import "antd/dist/antd.css";
 

@@ -1,0 +1,19 @@
+.error404 {
+  height: calc(100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    color: #45ca;
+  }
+}

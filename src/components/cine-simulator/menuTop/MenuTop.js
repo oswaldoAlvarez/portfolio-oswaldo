@@ -2,9 +2,10 @@ import React from "react";
 import { Menu } from "antd";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faAngrycreative } from "@fortawesome/free-brands-svg-icons";
 
-import "../../../styles/cine-simulator/menu/menu.scss";
+import "../../../styles/cine-simulator/menuTop/menuTop.scss";
 
 function MenuTop() {
   return (
@@ -12,6 +13,9 @@ function MenuTop() {
       <div className="menu-top__logo">
         <FontAwesomeIcon icon={faAngrycreative} />
       </div>
+      {/* <div className="menu-top__logo-responsive">
+        <FontAwesomeIcon icon={faBars} />
+      </div> */}
       <Menu
         theme="dark"
         mode="horizontal"

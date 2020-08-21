@@ -10,4 +10,12 @@
       margin-right: 20px;
     }
   }
+  &__logo-responsive {
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-top {
+    // display: none;
+  }
 }
