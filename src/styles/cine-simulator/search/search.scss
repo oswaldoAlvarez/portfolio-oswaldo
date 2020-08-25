@@ -24,3 +24,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 500px) {
+  .search-container {
+    .search {
+      width: 80%;
+      input {
+      }
+    }
+  }
+}

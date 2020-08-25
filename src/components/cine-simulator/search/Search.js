@@ -37,10 +37,10 @@ function Search(props) {
     <Layout>
       <Header />
       <div className="search-container">
-        <Col span={12} offset={6} className="search">
+        <div className="search">
           <h1>Busca tu película</h1>
           <Input onChange={onChangeSearch} value={searchValue} />
-        </Col>
+        </div>
         {movieList.results && (
           <div>
             <div className="search-movieCatalog">

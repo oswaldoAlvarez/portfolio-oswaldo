@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header-TS">
       <FontAwesomeIcon icon={faTwitter} className="tw-svg" />
-      <h1 className="header-TS__title">Tweets Simulator</h1>
+      <div className="header-TS__title">Tweets Simulator</div>
     </div>
   );
 }

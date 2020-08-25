@@ -36,7 +36,8 @@
 
 @media (max-width: 600px) {
   .movies-row {
-    width: 500px;
+    width: 300px;
+    margin: auto;
     flex-direction: column !important;
     .movies-col {
       width: inherit;
