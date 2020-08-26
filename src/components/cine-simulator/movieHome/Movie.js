@@ -95,7 +95,7 @@ function MovieInfo(props) {
   return (
     <>
       <div className="movie__info-header">
-        <h1>
+        <h1 className="movie__title">
           {title}
           <span>{moment(release_date, "YYYY-MM-DD").format("YYYY")}</span>
         </h1>
@@ -103,7 +103,7 @@ function MovieInfo(props) {
       </div>
       <div className="movie__info-content">
         <h3>General</h3>
-        <p>{overview}</p>
+        <p className="movie__description-movie">{overview}</p>
         <h3>Generos</h3>
         <ul>
           {genres.map((gender) => (

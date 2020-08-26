@@ -23,17 +23,17 @@ export default function Header() {
           <div className="closeMenu" onClick={() => setMenuState(false)}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
-          <div key="1">
+          <div className="header-cine__content-link" key="1">
             <Link className="header-cine__link" to="/cine-simulator/home">
               Home
             </Link>
           </div>
-          <div key="2">
+          <div className="header-cine__content-link" key="2">
             <Link className="header-cine__link" to="/cine-simulator/new-movies">
               Ultimos Lanzamientos
             </Link>
           </div>
-          <div key="3">
+          <div className="header-cine__content-link" key="3">
             <Link
               className="header-cine__link"
               to="/cine-simulator/popular-movies"
@@ -41,7 +41,7 @@ export default function Header() {
               Populares
             </Link>
           </div>
-          <div key="4">
+          <div className="header-cine__content-link" key="4">
             <Link
               className="header-cine__link"
               to="/cine-simulator/search-movies"

@@ -5,6 +5,7 @@
   position: relative;
   height: 64px;
   width: 100%;
+  padding-left: 35px;
   .header-cine__content {
     &__logo-responsive {
       display: none;
@@ -15,17 +16,17 @@
   }
   .m-0 {
     margin-left: -400px !important;
-    transition: 1s;
   }
 }
 
 @media (max-width: 500px) {
   .header-cine {
+    padding-left: 0;
     .header-cine__content {
       display: flex;
       flex-direction: column;
       position: absolute;
-      z-index: 2;
+      z-index: 10;
       padding-top: 7px;
       .header-cine__logo-responsive {
         padding-left: 35px;
@@ -40,17 +41,22 @@
         }
       }
       .landing-menu {
-        transition: 2s;
+        transition: 1.3s;
         display: flex;
         flex-direction: column;
         color: white;
-        background: black;
+        background: #001529;
         padding: 25px;
         width: 200px;
-        .header-cine__link {
-          color: white;
-          font-weight: 600;
-          margin: 4px 0 4px 0 !important;
+        height: 400px;
+        justify-content: space-between;
+        font-size: 20px;
+        .header-cine__content-link {
+          .header-cine__link {
+            color: white;
+            font-weight: 600;
+            margin: 4px 0 4px 0 !important;
+          }
         }
       }
     }
